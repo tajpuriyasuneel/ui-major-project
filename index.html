@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>UI-Hardcode</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="left">
+        <div class="left-top">
+          <div id="my_camera"></div>
+          <div>
+            <button onclick="open_camera()" value="new">New</button>
+            <button onclick="take_snapshot()" value="Take Snapshot">
+              Take Snapshot
+            </button>
+          </div>
+        </div>
+
+        <div class="left-bottom">
+          <div id="my_camera"></div>
+          <div>
+            <input type="file" id="txtfiletoread" />
+          </div>
+        </div>
+      </div>
+
+      <div class="right">
+        <p>Result will be shown here.</p>
+      </div>
+    </div>
+
+    <!-- First, include the Webcam.js JavaScript Library -->
+    <script src="webcam.min.js"></script>
+    <script src="index.js"></script>
+
+    <!-- A button for taking snaps -->
+  </body>
+</html>
